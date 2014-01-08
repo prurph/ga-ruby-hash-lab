@@ -47,7 +47,7 @@ location = { city: 'Cambridge', state: 'MA', street_address: '101 Main St'}
 puts "location is = #{location}"
 
 ############Exit Program #######################
-#exit 
+#exit
 
 # Lots of opinions on newer hash syntax. Remember to use
 # newer hash syntax ONLY when all keys are symbols. Which is a very
@@ -60,11 +60,11 @@ puts "location is = #{location}"
 ######################################
 
 # Hash#keys
-# will show all the keys in a hash. 
+# will show all the keys in a hash.
 puts "\nkeys are: " << location.keys.to_s
 
 # Hash#values
-# will show all the keys in a hash. 
+# will show all the keys in a hash.
 puts "\nvalues are: #{location.values}"
 
 # Hash#each
@@ -142,7 +142,7 @@ puts names.sort
 def hash_intersection(h1,h2)
   intersection = { }
   h1.each do |k,v|
-    intersection[k] = v if h2.keys.include?(k) && h2.values.include?(v) 
+    intersection[k] = v if h2.keys.include?(k) && h2.values.include?(v)
   end
   intersection
 end
